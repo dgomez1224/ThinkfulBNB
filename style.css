@@ -48,6 +48,16 @@ main img {
   align-items: center;
 }
 
+.searchList{
+  display: flex;
+  flex-direction: column;
+}
+
+.search{
+  display: flex;
+  justify-content: space-between;
+}
+
 .item {
   flex: 1;
   margin: 10px;
@@ -82,7 +92,7 @@ form div {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 56px;
+  font-size: 20vmin;
   color: #fff;
   
 }
@@ -91,6 +101,7 @@ header nav ul{
   display: flex;
   padding-left: 0;
   justify-content: center;
+  
 }
 
 header nav ul li {
@@ -112,6 +123,8 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+
+
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
@@ -120,13 +133,12 @@ form {
 
 form label {
   font-weight: bold;
-  flex: 1;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  flex: 2;
+  width: 180px;
 }
 
 form button {
@@ -156,7 +168,12 @@ footer p {
   header{
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .logo {
+    font-size: 40px;
   }
 
   header h1{ 
@@ -169,27 +186,54 @@ footer p {
    padding-top: 6px;
   }
 
-  main section form{
-   display: flex;
-   justify-content: space-between;
-  }
-  
+
   main section form div{
     display: flex;
     flex-direction: column ;
   }
 
-  form button {
-    width: 10%;
-  }
-
   main img{
     width: 100%;
   }
+  
   .group {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+
+  }
+
+  .searchList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  }
+
+  .search{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+
+  form select,
+  form input {
+    width: 100%;
+  }
+
+  .searchBtn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 15%;
+  }
+
+  form button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
   }
 
   .group1 img{
